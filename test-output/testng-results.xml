@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="regression test" duration-ms="9447" started-at="2020-12-24T11:29:30 IST" finished-at="2020-12-24T11:29:40 IST">
+    <groups>
+    </groups>
+    <test name="twitter api test" duration-ms="9447" started-at="2020-12-24T11:29:30 IST" finished-at="2020-12-24T11:29:40 IST">
+      <class name="com.letKodeIt.statuses.TwitterEndToEndWorkflow">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.letKodeIt.statuses.TwitterEndToEndWorkflow@4b1c1ea0]" name="setup" is-config="true" duration-ms="1" started-at="2020-12-24T11:29:36 IST" finished-at="2020-12-24T11:29:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="postTweet()[pri:0, instance:com.letKodeIt.statuses.TwitterEndToEndWorkflow@4b1c1ea0]" name="postTweet" duration-ms="2256" started-at="2020-12-24T11:29:36 IST" finished-at="2020-12-24T11:29:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method status="PASS" signature="readTweet()[pri:0, instance:com.letKodeIt.statuses.TwitterEndToEndWorkflow@4b1c1ea0]" name="readTweet" duration-ms="653" started-at="2020-12-24T11:29:38 IST" depends-on-methods="com.letKodeIt.statuses.TwitterEndToEndWorkflow.postTweet" finished-at="2020-12-24T11:29:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:com.letKodeIt.statuses.TwitterEndToEndWorkflow@4b1c1ea0]" name="deleteTweet" duration-ms="780" started-at="2020-12-24T11:29:39 IST" depends-on-methods="com.letKodeIt.statuses.TwitterEndToEndWorkflow.readTweet" finished-at="2020-12-24T11:29:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.letKodeIt.statuses.TwitterEndToEndWorkflow -->
+      <class name="com.letKodeIt.statuses.usertimelinetest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.letKodeIt.statuses.usertimelinetest@6acdbdf5]" name="beforeClass" is-config="true" duration-ms="897" started-at="2020-12-24T11:29:30 IST" finished-at="2020-12-24T11:29:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="userTimeLine()[pri:0, instance:com.letKodeIt.statuses.usertimelinetest@6acdbdf5]" name="userTimeLine" duration-ms="2879" started-at="2020-12-24T11:29:31 IST" finished-at="2020-12-24T11:29:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userTimeLine -->
+        <test-method status="PASS" signature="userTimeLine2()[pri:0, instance:com.letKodeIt.statuses.usertimelinetest@6acdbdf5]" name="userTimeLine2" duration-ms="1892" started-at="2020-12-24T11:29:34 IST" finished-at="2020-12-24T11:29:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userTimeLine2 -->
+      </class> <!-- com.letKodeIt.statuses.usertimelinetest -->
+    </test> <!-- twitter api test -->
+  </suite> <!-- regression test -->
+</testng-results>
